@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202124;
+    color: white;
+}
+
+hmtl{
+    font-size: 62.8%;
+}
+
+body{
+    /*border: 5px solid red;*/
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/*Encabezado*/
+header{
+    /*border: 5px solid green;*/
+    width: 100%;
+    height: 90px;
+    font-size: 13px;
+
+}
+
+.Navegacion{
+    /*border: 5px solid gold;*/
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.Lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    background-color: transparent;
+}
+
+.Menu{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat; /*Para que no se repita la imágen*/
+    background-position: center; /*El icono quedara al centro*/
+    background-size: contain; /*Encapsula la imágen al tamaño del contenedor*/
+    width: 30px;
+    height: 30px;
+}
+
+.User{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50px;
+
+    position: relative;
+    left: 5px;
+    top: 2px;
+
+
+}
+
+li{
+    background-color: transparent;
+}
+
+li:hover{
+
+    text-decoration-line: underline;
+
+}
+
+.User:hover{
+    /*border: 1px solid red;*/
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    filter: brightness(-5);
+}
+
+.Menu:hover{
+    /*border: 1px solid red;*/
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    background-color: rgb(194, 177, 177);
+    filter: brightness(5);
+}
+
+/*Principal*/
+main{
+    /*border: 5px solid green;*/
+    margin-top: 150px;
+    text-align: center;
+    
+
+}
+
+.MainLogo{
+    /*border: 5px solid red;*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+.Logo{
+    /*border: 5px solid green;*/
+    width: 300px;
+    height: 100px;
+}
+
+.MainInput{
+    /*border: 5px solid rgb(51, 255, 0);*/
+    width: 100%;
+    margin: 0, auto;
+    margin-bottom: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.InputContainer{
+    
+    width: 550px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /*border: 5px solid red;*/
+
+    
+
+}
+
+.InputContainer:hover{
+    
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+
+}
+
+.Barra{
+    
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none; /*Quita el enfoque interno que tiene el input por defecto*/
+}
+
+.Lupa{
+    background-image: url('https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+.Microfono{
+    background-image: url('https://images.vexels.com/media/users/3/132136/isolated/preview/96a71143337a3ad5576f9d0d2aa9787e-singing-microphone-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    color: white;
+    filter: brightness(1);
+    margin-left: 5px;
+}
+
+/*Botones*/
+.MainBotones{
+    /*border: 5px solid red;*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+button{
+    border: none;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+
+    border-radius: 5px;
+    background-color: #303134;
+}
+
+button:hover{
+    border: 1px solid #727477;
+}
+
+.Contenedor{
+
+    /*border: 5px solid purple;*/
+    height: 100%;
+}
+
+/*Footer*/
+footer{
+    /*border: 5px solid rgb(0, 225, 255);*/
+    width: 100%;
+
+    /*Posiciona el footer hasta abajo*/
+    position: relative;
+   
+}
+
+.Pais{
+    /*border: 5px solid green;*/
+    height: 40px;
+
+    display: flex;
+
+    background-color: #171717;
+}
+
+.PP{
+    /*border: 5px solid yellow;*/
+    width: 100%;
+    height: 50%;
+
+    margin-left: 20px;
+    margin-top: 10px;
+
+    background-color: #171717;
+
+    font-size: 14px;
+}
+
+.Opciones{
+    /*border: 5px solid orange;*/
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(82, 78, 78);
+ 
+    height: 50px;
+
+    background-color: #171717;
+
+    font-size: 14px;
+
+}
+
+.FooterI{
+    /*border: 5px solid red;*/
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    margin-left: 28px;
+
+    background-color: transparent;
+}
+
+.FooterD{
+    /*border: 5px solid red;*/
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    background-color: transparent;
+
+    margin-right: 28px;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+.Links{
+    background-color: #171717;
+}
+
+
+/*Responsive*/
+
+/*Tablet*/
+
+@media(max-width: 700px){ /*Cuando el ancho sea de 700px o menos de ancho pasara otra cosa*/
+    .Opciones{
+        /*background-color: red;*/
+
+        display: flex;
+        flex-direction: row;
+
+        height: 110px;
+    }
+
+    .FooterI{
+        /*background-color: green;*/
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .FooterD{
+        /*background-color: yellow;*/
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
