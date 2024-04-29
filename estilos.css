@@ -215,8 +215,10 @@ footer{
     width: 100%;
 
     /*Posiciona el footer hasta abajo*/
-    position: relative;
-   
+    position: fixed;
+    top: 1;
+    bottom: 0;
+
 }
 
 .Pais{
